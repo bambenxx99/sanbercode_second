@@ -30,6 +30,6 @@ Route::get('/table', function () {
 Route::get('/data-table', function () {
     return view('items.data-table');
 });
-// Route::get('/', function () {
-//     return view('master');
-// });
+
+Route::get('/cast/create', 'CastController@create');
+Route::post('/cast', 'CastController@store');
